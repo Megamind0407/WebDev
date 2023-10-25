@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.png"
+                width="60" height="90">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Skills</a></li>
+            <li id="link2" class="link"><a href="#">Projects</a></li>
+            <li id="link3" class="link"><a href="#">Contact</a></li>
+        </ul>
+        <button class="btn">Hire Me</button>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <H1>Hey, I'm Aryan </H1>
+            <h4>Web Developer | Logo Designer</h4>
+            <p>
+                Welcome to my portfolio! I'm Aryan Gaikwad, a passionate web developer & logo designer with a strong commitment to creating visually appealing and highly functional websites. 
+                
+            </p>
+            
+        </div>
+        <div class="image">
+            <img src="images/header.png">
+        </div>
+    </header>
+
+    
+    <section class="container">
+        <h2 class="header">Skills</h2>
+        <div class="skill">
+            <div class = "outer">
+                <div class = "inner">
+                    <div id="number">
+                        
+                    </div>
+                </div>
+            </div>
+            <h3 class="sub-header">
+                HTML
+            </h3>
+            <div class="circle">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+            </div>
+
+        </div>
+        <div class="skill">
+            <div class = "outer">
+                <div class = "inner">
+                    <div id="number1">
+                        
+                    </div>
+                </div>
+            </div>
+            <h3 class="sub-header">
+                CSS
+            </h3>
+            <div class="circle1">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        </div>
+
+        </div>
+        <div class="skill">
+            <div class = "outer">
+                <div class = "inner">
+                    <div id="number2">
+                        
+                    </div>
+                </div>
+            </div>
+            <h3 class="sub-header">
+                JAVASCRIPT
+            </h3>
+            <div class="circle2">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        </div>
+        </div>
+        
+        <script>
+            let number = document.getElementById("number");
+            let counter = 0;
+            setInterval(() => {
+                if(counter == 75){
+                    clearInterval();
+                }
+                else
+                {
+                    counter += 1;
+                    number.innerHTML = counter + "%";
+                }
+
+            }, 26);
+        </script> 
+        <script>
+            let number1 = document.getElementById("number1");
+            let counter1 = 0;
+            setInterval(() => {
+                if(counter1 == 80){
+                    clearInterval();
+                }
+                else
+                {
+                    counter1 += 1;
+                    number1.innerHTML = counter1 + "%";
+                }
+
+            }, 24);
+        </script> 
+        <script>
+            let number2 = document.getElementById("number2");
+            let counter2 = 0;
+            setInterval(() => {
+                if(counter2 == 70){
+                    clearInterval();
+                }
+                else
+                {
+                    counter2 += 1;
+                    number2.innerHTML = counter2 + "%";
+                }
+
+            }, 27);
+        </script> 
+
+        
+
+        
+        <h2 class="header">OUR PROJECTS</h2>
+        <div class="ui-card">
+            <img src="images/1.jpg" height="600px">
+            <div class="title">
+                <h3>Netflix Clone</h3>
+                <a href="#">Explore</a>
+            </div>
+
+        </div>
+        <div class="ui-card">
+            <img src="images/2.jpg" height="600px">
+            <div class="title">
+                <h3>Fitlife Hub</h3>
+                <a href="https://github.com/Megamind0407/fitlifehub.git">Explore</a>
+            </div>
+
+        </div>
+        <div class="ui-card">
+            <img src="images/3.jpg" height="600px">
+            <div class="title">
+                <h3>Weather</h3>
+                <a href="https://github.com/Megamind0407/Weather-App.git">Explore</a>
+            </div>
+
+        </div>
+        <!-- <div class="features">
+            <div class="card">
+                <span><i class="ri-money-dollar-box-line"></i></span>
+                <h4>Free Tutorials</h4>
+                <p>
+                    My tutorials in my channel "AsmrProg" are free and you don't need to pay anything.
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-bug-line"></i></span>
+                <h4>Fix Your Bugs</h4>
+                <p>
+                    You have any problem in your codes? Tell me, i will help you fix it.
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-history-line"></i></span>
+                <h4>On Time Videos</h4>
+                <p>
+                    We have video each 4 days, So check channel every 4 days to watch it!
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-shake-hands-line"></i></span>
+                <h4>Cooperation</h4>
+                <p>
+                    You want we worrk together? Write email to us, we will read it.
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div> -->
+   
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/logo.png"
+                width="50" height="100">
+            </div>
+            <p>
+                Aryan's Portfolio
+            </p>
+            <div class="socials">
+                <a href="https://github.com/Megamind0407"><i class="ri-github-line"></i></a>
+                <a href="https://twitter.com/aryan29093"><i class="ri-twitter-line"></i></a>
+                <a href="https://www.linkedin.com/in/aryan-gaikwad"><i class="ri-linkedin-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Company</h4>
+            <a href="#">Business</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
